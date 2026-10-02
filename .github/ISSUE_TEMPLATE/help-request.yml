@@ -1,0 +1,59 @@
+name: Help request
+description: Ask the team for help when you are stuck or blocked.
+title: "[Help]: "
+labels: ["help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Give the team enough context to act on your request: what you are doing, what went wrong, and how to reproduce it.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or outcome you are working towards.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead / error output?
+      description: Paste the full error message or command output. It is rendered as shell code, so no backticks are needed.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact commands or actions that lead to the problem.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where is the code? Repo, branch or commit
+      placeholder: boufnichel/testsf1 @ my-branch (abc1234)
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?
+      description: Workarounds, searches or fixes you attempted, and what happened.
+    validations:
+      required: false
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How urgent is this?
+      options:
+        - blocking
+        - slowing me down
+        - low
+    validations:
+      required: false
