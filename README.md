@@ -1,5 +1,7 @@
 # Todos
 
+[![CI](https://github.com/boufnichel/testsf1/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/boufnichel/testsf1/actions/workflows/ci.yml)
+
 A React + TypeScript app built with [Vite](https://vite.dev), tested with
 [Vitest](https://vitest.dev) and React Testing Library, and linted with ESLint.
 
