@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
